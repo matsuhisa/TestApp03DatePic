@@ -16,9 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ROk-Mq-HDf">
-                                <rect key="frame" x="20" y="40" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPo-sF-kIq">
+                                <rect key="frame" x="10" y="95" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ROk-Mq-HDf">
+                                <rect key="frame" x="20" y="40" width="560" height="15"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -26,10 +33,13 @@
                         <constraints>
                             <constraint firstItem="ROk-Mq-HDf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="5RL-6D-Hla"/>
                             <constraint firstAttribute="trailing" secondItem="ROk-Mq-HDf" secondAttribute="trailing" constant="20" id="9lq-Xw-i14"/>
+                            <constraint firstItem="gPo-sF-kIq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="eMI-Gc-v9W"/>
+                            <constraint firstItem="gPo-sF-kIq" firstAttribute="top" secondItem="ROk-Mq-HDf" secondAttribute="bottom" constant="40" id="rtY-e2-WCB"/>
                             <constraint firstItem="ROk-Mq-HDf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="xiG-ty-TNH"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fontLabel" destination="gPo-sF-kIq" id="MWO-AY-jR3"/>
                         <outlet property="textField" destination="ROk-Mq-HDf" id="TVi-CH-PbF"/>
                     </connections>
                 </viewController>

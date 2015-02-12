@@ -14,6 +14,7 @@
 		B93AF9041A876098000FE73D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93AF9031A876098000FE73D /* Images.xcassets */; };
 		B93AF9071A876098000FE73D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93AF9051A876098000FE73D /* LaunchScreen.xib */; };
 		B93AF9131A876098000FE73D /* TestApp03DatePicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93AF9121A876098000FE73D /* TestApp03DatePicTests.swift */; };
+		B98F07CC1A8B9E2800EC2F3C /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = B98F07CB1A8B9D1300EC2F3C /* FontAwesome.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B93AF90C1A876098000FE73D /* TestApp03DatePicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestApp03DatePicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B93AF9111A876098000FE73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B93AF9121A876098000FE73D /* TestApp03DatePicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp03DatePicTests.swift; sourceTree = "<group>"; };
+		B98F07CB1A8B9D1300EC2F3C /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		B93AF8F61A876098000FE73D /* TestApp03DatePic */ = {
 			isa = PBXGroup;
 			children = (
+				B98F07CA1A8B9CF500EC2F3C /* fonts */,
 				B93AF8F91A876098000FE73D /* AppDelegate.swift */,
 				B93AF8FE1A876098000FE73D /* ViewController.swift */,
 				B93AF9001A876098000FE73D /* Main.storyboard */,
@@ -113,6 +116,14 @@
 				B93AF9111A876098000FE73D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B98F07CA1A8B9CF500EC2F3C /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B98F07CB1A8B9D1300EC2F3C /* FontAwesome.otf */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98F07CC1A8B9E2800EC2F3C /* FontAwesome.otf in Resources */,
 				B93AF9021A876098000FE73D /* Main.storyboard in Resources */,
 				B93AF9071A876098000FE73D /* LaunchScreen.xib in Resources */,
 				B93AF9041A876098000FE73D /* Images.xcassets in Resources */,
@@ -411,6 +423,7 @@
 				B93AF9181A876098000FE73D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B93AF9191A876098000FE73D /* Build configuration list for PBXNativeTarget "TestApp03DatePicTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +432,7 @@
 				B93AF91B1A876098000FE73D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

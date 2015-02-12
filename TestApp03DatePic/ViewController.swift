@@ -5,6 +5,7 @@ import UIKit
 
 class ViewController: UIViewController, UIToolbarDelegate {
     
+    @IBOutlet weak var fontLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     //var textField: UITextField!
     var toolBar:UIToolbar!
@@ -13,9 +14,16 @@ class ViewController: UIViewController, UIToolbarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
+        fontLabel.text = "\u{f067}\u{f030}\u{f013}"
+        fontLabel.font = UIFont(name:"FontAwesome",size:20)
+        //fontLabel.setTitleTextAttributes([NSFontAttributeName:UIFont(name:"FontAwesome",size:20)!],forState:UIControlState.Normal)
+
+        
         // 入力欄の設定
         //textField = UITextField(frame: CGRectMake(self.view.frame.size.width/3, 100, 0, 0))
         textField.placeholder = dateToString(NSDate())
+        textField.text        = dateToString(NSDate())
         //textField.sizeToFit()
         self.view.addSubview(textField)
         
@@ -32,8 +40,12 @@ class ViewController: UIViewController, UIToolbarDelegate {
         toolBar.tintColor = UIColor.whiteColor()
         toolBar.backgroundColor = UIColor.blackColor()
         
-        let toolBarBtn      = UIBarButtonItem(title: "完了", style: .Bordered, target: self, action: "tappedToolBarBtn:")
+        let toolBarBtn      = UIBarButtonItem(title: "\u{f030}", style: .Bordered, target: self, action: "tappedToolBarBtn:")
+        let selectedAttributes = [NSFontAttributeName : UIFont(name:"FontAwesome",size:14)]
+        toolBarBtn.setTitleTextAttributes(selectedAttributes, forState: UIControlState.Normal)
+
         let toolBarBtnToday = UIBarButtonItem(title: "今日", style: .Bordered, target: self, action: "tappedToolBarBtnToday:")
+        
         
         toolBarBtn.tag = 1
         toolBar.items = [toolBarBtn, toolBarBtnToday]
